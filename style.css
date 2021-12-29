@@ -39,7 +39,7 @@ main {
   /* color: aliceblue; */
   color: black;
   border-radius: 6px;
-  max-height: 25rem;
+  height: auto;
 }
 .author {
   margin-top: 1rem;
