@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,800;1,500;1,800&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  background-color: #dbe5e3;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a092ac' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  place-content: center;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: darkslateblue;
+  text-align: center;
+}
+main {
+  display: grid;
+  margin: auto 10px;
+  max-width: 400px;
+  text-align: center;
+  gap: 1rem;
+  /* background: #03045e; */
+  background: white;
+  padding: 2em 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  /* color: aliceblue; */
+  color: black;
+  border-radius: 6px;
+  max-height: 25rem;
+}
+.author {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+#new-quote-text {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+i {
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 1rem;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}
+.twitter-btn {
+  color: #0661a9;
+}
+#new-quote {
+  color: black;
+  outline: 2px solid black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#new-quote:hover,
+#new-quote:focus {
+  transition: 0.3s;
+  outline-offset: -3px;
+  background: darkgray;
+  color: white;
+}
+#new-quote:active {
+  transform: translate(0, 20px);
+}
+@media (max-width: 1000px) {
+  main {
+    margin: auto 10px;
+  }
+
+  #new-quote {
+    font-size: 1rem;
+  }
+}

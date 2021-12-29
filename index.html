@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote generator</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./quotefviocn.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Quote Generator</h1>
+    </header>
+    <div id="loader">
+        <h2>loading...</h2>
+    </div>
+    <main>
+      <section class="content-quote">
+        <div>
+          <h2></h2>
+            <i class="fas fa-quote-right"></i><span id="new-quote-text">
+        
+            </span>
+          </h2>
+        </div>
+        <blockquote class="author" id="author"></blockquote>
+      </section>
+      <section class="actions">
+        <button class="twitter-btn btn" id="tweet-btn"><i class="fab fa-twitter"></i></button>
+
+        <button id="new-quote" class="btn">New-Quote</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
